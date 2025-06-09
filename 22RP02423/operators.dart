@@ -43,12 +43,12 @@ void main() {
   bool isFalse = false;
   print("\nLogical Operators:");
   print("isTrue && isFalse → ${isTrue && isFalse}");
-  print("isTrue || isFalse → ${isTrue || isFalse}");
+  print("isTrue || isFalse → ${isTrue ||  isFalse}");
   print("!isTrue → ${!isTrue}");
 
   //  Type Test Operators
   print("\nType Test Operators:");
-  print("a is int → ${a is int}");
+  print("a is int → ${a is  int}");
   print("b is! String → ${b is! String}");
 
   //  Bitwise Operators (on integers)

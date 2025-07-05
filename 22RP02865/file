@@ -1,0 +1,12 @@
+| Keyword   | Description                                     |
+| --------- | ----------------------------------------------- |
+| `var`     | Type inferred automatically. Mutable.           |
+| `final`   | Assigned only once. Value known at runtime.     |
+| `const`   | Compile-time constant.                          |
+| `dynamic` | Type is checked at runtime, flexible but risky. |
+
+
+var name = 'Alice';           // String
+final age = 30;               // Immutable
+const country = 'Rwanda';     // Compile-time constant
+dynamic x = 10; x = 'hello';  // OK, but use carefully

@@ -1,0 +1,54 @@
+1. Null Safety
+What is Null Safety?
+Null safety helps you avoid errors caused by null values (e.g., null reference exceptions or “null pointer errors”).
+
+ Enabled by default in Dart 2.12+
+It ensures that:
+
+Non-nullable variables must be initialized with a value.
+
+You must explicitly allow nulls using ?
+
+Examples: 
+// Non-nullable variable (must be initialized)
+String name = 'Alice'; 
+
+// Nullable variable (can be null)
+String? nickname;
+nickname = null;  // OK
+
+Benefits:
+-Prevents many bugs at compile-time.
+
+-Makes code more robust and predictable.
+
+ 2. late Keyword
+ What is late?
+Use late when:
+
+You declare a non-nullable variable, but
+
+You want to initialize it later, not immediately.
+
+This tells Dart: “I will initialize this variable before using it.”
+
+ Example:
+
+late String greeting;
+
+void main() {
+  greeting = 'Hello, world!';
+  print(greeting);  // Works fine
+}
+
+When to use late:
+When you can’t initialize immediately, like:
+
+Class fields initialized in init() or a method
+
+Values from a Future, build() in Flutter, etc.
+
+| Feature       | Purpose                                | Example                            |
+| ------------- | -------------------------------------- | ---------------------------------- |
+| `Null Safety` | Avoid null reference bugs              | `String? name = null;`             |
+| `late`        | Delay non-nullable variable assignment | `late String title; title = 'Hi';` |

@@ -1,6 +1,7 @@
 // Dart Programming Study Task – 9 June 2025
 
 // Enum Declaration should be before main
+
 enum Status { pending, approved, rejected }
 
 void main() {
